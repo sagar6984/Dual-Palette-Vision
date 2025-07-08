@@ -32,14 +32,41 @@ export default function Index() {
   const [phone, setPhone] = useState("");
   const [project, setProject] = useState("");
   const [status, setStatus] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
 
   const handleSubmit = async () => {
+    let isValid = true;
+
+    // Reset previous errors
+    setNameError("");
+    setPhoneError("");
+
+    // Validate Full Name
+    if (!fullName.trim()) {
+      setNameError("Name is required.");
+      isValid = false;
+    }
+
+    // Validate WhatsApp Number
+    const phoneRegex = /^(\+91\s?)?[6-9]\d{9}$/;
+    if (!phone.trim()) {
+      setPhoneError("Phone number is required.");
+      isValid = false;
+    } else if (!phoneRegex.test(phone)) {
+      setPhoneError("Enter a valid number.");
+      isValid = false;
+    }
+
+    if (!isValid) return; // stop if validation failed
+
     const formURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdr0AByBQl8BJvuE604pj5CYg_MlMrv2TNVHofOR4YBypz2yQ/formResponse";
 
     const formData = new FormData();
-    formData.append("entry.1482257781", fullName);   // Replace with your actual entry ID
-    formData.append("entry.569042745", phone);      // Replace with your actual entry ID
-    formData.append("entry.735249132", project);    // Replace with your actual entry ID
+    formData.append("entry.1482257781", fullName);
+    formData.append("entry.569042745", phone);
+    formData.append("entry.735249132", project);
 
     try {
       await fetch(formURL, {
@@ -57,6 +84,7 @@ export default function Index() {
       setStatus("⚠️ Failed to send.");
     }
   };
+
 
   //G Sheet set up ends here
   return (
@@ -125,7 +153,7 @@ export default function Index() {
             <div className="space-y-8 ">
               <div className="space-y-4 relative z-10 max-w-xl text-white bg-black/30 sm:bg-transparent p-4 sm:p-0 rounded-md">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                  Translating Your <span className="text-accent block">Ideas</span>  
+                  Translating Your <span className="text-accent block">Ideas</span>
                   In<span className="text-accent">to</span>
                   <span className="text-accent block">
                     Reality
@@ -588,11 +616,11 @@ export default function Index() {
               </h2>
               <p className="text-lg text-muted-foreground">
                 Dual Palette Vision Pvt. Ltd. is a premium architecture and
-                 interior design firm offering end-to-end solutions, from concept
-                  to execution. We create thoughtful, functional, and elegant 
-                  spaces that reflect your lifestyle and aspirations. With a blend
-                   of creativity, precision, and care, we turn your ideas into 
-                   timeless living experiences.
+                interior design firm offering end-to-end solutions, from concept
+                to execution. We create thoughtful, functional, and elegant
+                spaces that reflect your lifestyle and aspirations. With a blend
+                of creativity, precision, and care, we turn your ideas into
+                timeless living experiences.
               </p>
               <p className="text-muted-foreground">
                 We believe that great design is about more than aesthetics—it's
@@ -679,6 +707,7 @@ export default function Index() {
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                   />
+                  {nameError && <p className="text-sm text-red-500">{nameError}</p>}
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">WhatsApp Number</label>
@@ -688,6 +717,7 @@ export default function Index() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
+                  {phoneError && <p className="text-sm text-red-500">{phoneError}</p>}
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">
@@ -749,7 +779,7 @@ export default function Index() {
                     </span>
                     <span className="text-foreground">10:00 AM - 7:00 PM</span>
                   </div>
-                  
+
                   <div className="flex justify-between">
                     <span className="text-foreground">Monday</span>
                     <span className="text-foreground">By Appointment</span>
@@ -796,7 +826,7 @@ export default function Index() {
                 <li>+91 8869994910</li>
                 <li>dualpalettevision24@gmail.com</li>
                 <li>Centre Point Complex, Emaar Gomti Greens</li>
-                      
+
                 <li>1st floor/05, Arjunganj</li>
                 <li>Lucknow, Uttar Pradesh 226002</li>
               </ul>
