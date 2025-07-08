@@ -485,7 +485,7 @@ export default function Index() {
               <div className="group cursor-pointer flex-none w-80 snap-start">
                 <div className="relative overflow-hidden rounded-xl">
                   <img
-                    src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg"
+                    src={Portfolio1}
                     alt="Modern kitchen design"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -502,7 +502,7 @@ export default function Index() {
               <div className="group cursor-pointer flex-none w-80 snap-start">
                 <div className="relative overflow-hidden rounded-xl">
                   <img
-                    src="https://images.pexels.com/photos/1571462/pexels-photo-1571462.jpeg"
+                    src={Portfolio2}
                     alt="Luxury bathroom design"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -517,7 +517,7 @@ export default function Index() {
               <div className="group cursor-pointer flex-none w-80 snap-start">
                 <div className="relative overflow-hidden rounded-xl">
                   <img
-                    src="https://images.pexels.com/photos/2317972/pexels-photo-2317972.jpeg"
+                    src={Portfolio3}
                     alt="Dining room design"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -547,7 +547,7 @@ export default function Index() {
               <div className="group cursor-pointer flex-none w-80 snap-start">
                 <div className="relative overflow-hidden rounded-xl">
                   <img
-                    src="https://images.pexels.com/photos/8490204/pexels-photo-8490204.jpeg"
+                    src={Portfolio5}
                     alt="Living room design"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
