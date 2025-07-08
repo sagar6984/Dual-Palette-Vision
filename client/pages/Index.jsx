@@ -390,12 +390,12 @@ export default function Index() {
               <div className="relative overflow-hidden rounded-xl">
                 <img
                   src={Portfolio1}
-                  alt="Modern kitchen design"
+                  alt="Modern design"
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-semibold">Modern Kitchen</h3>
+                  <h3 className="font-semibold">Modern Design</h3>
                   <p className="text-sm">
                     Contemporary design with clean lines
                   </p>
@@ -407,13 +407,13 @@ export default function Index() {
               <div className="relative overflow-hidden rounded-xl">
                 <img
                   src={Portfolio2}
-                  alt="Luxury bathroom design"
+                  alt="Minimalist Living"
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-semibold">Luxury Bathroom</h3>
-                  <p className="text-sm">Elegant spa-like retreat</p>
+                  <h3 className="font-semibold">Minimalist Living</h3>
+                  <p className="text-sm">Clean and serene space</p>
                 </div>
               </div>
             </div>
@@ -452,13 +452,13 @@ export default function Index() {
               <div className="relative overflow-hidden rounded-xl">
                 <img
                   src={Portfolio5}
-                  alt="Living room design"
+                  alt="Elegant Kitchen Design"
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-semibold">Minimalist Living</h3>
-                  <p className="text-sm">Clean and serene space</p>
+                  <h3 className="font-semibold">Kitchen Design</h3>
+                  <p className="text-sm">Clean and serene cooking</p>
                 </div>
               </div>
             </div>
@@ -472,7 +472,7 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-semibold">Industrial Chic</h3>
+                  <h3 className="font-semibold">Industrial design</h3>
                   <p className="text-sm">Urban loft aesthetic</p>
                 </div>
               </div>
@@ -486,12 +486,12 @@ export default function Index() {
                 <div className="relative overflow-hidden rounded-xl">
                   <img
                     src={Portfolio1}
-                    alt="Modern kitchen design"
+                    alt="Modern design"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="font-semibold">Modern Kitchen</h3>
+                    <h3 className="font-semibold">Modern Design</h3>
                     <p className="text-sm">
                       Contemporary design with clean lines
                     </p>
@@ -503,13 +503,13 @@ export default function Index() {
                 <div className="relative overflow-hidden rounded-xl">
                   <img
                     src={Portfolio2}
-                    alt="Luxury bathroom design"
+                    alt="Minimalist Living"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="font-semibold">Luxury Bathroom</h3>
-                    <p className="text-sm">Elegant spa-like retreat</p>
+                    <h3 className="font-semibold">Minimalist Living</h3>
+                    <p className="text-sm">Clean and serene space</p>
                   </div>
                 </div>
               </div>
@@ -548,13 +548,13 @@ export default function Index() {
                 <div className="relative overflow-hidden rounded-xl">
                   <img
                     src={Portfolio5}
-                    alt="Living room design"
+                    alt="Kitchen Design"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="font-semibold">Minimalist Living</h3>
-                    <p className="text-sm">Clean and serene space</p>
+                    <h3 className="font-semibold">Kitchen Design</h3>
+                    <p className="text-sm">Clean and serene cooking</p>
                   </div>
                 </div>
               </div>
@@ -568,7 +568,7 @@ export default function Index() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="font-semibold">Industrial Chic</h3>
+                    <h3 className="font-semibold">Industrial Design</h3>
                     <p className="text-sm">Urban loft aesthetic</p>
                   </div>
                 </div>
